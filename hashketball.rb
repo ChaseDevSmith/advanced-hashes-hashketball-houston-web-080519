@@ -152,8 +152,24 @@ def team_colors(team_name)
   end 
 end
 
+def team_names
+  game_hash.map do |place, team|
+    team[:team_name]
+  end
+end 
 
-
+def player_numbers(team_name)
+  #returns arry of jersey numbers for
+  team_namegame_hash.map do |place, team|
+    if team[:team_name] == tean_name
+      team.each do |attributes, data|
+        if attributes === :players_name
+          data[:numbers]
+        end
+      end
+    end 
+  end
+end
 
 
 
