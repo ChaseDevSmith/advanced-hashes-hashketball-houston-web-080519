@@ -118,7 +118,8 @@ end
 def num_points_scored(players_name)
   #return numbers of points for passed in player 
   game_hash.each do |place, team|
-    binding.pry 
+    team.each do |attribute, data|
+      binding.pry 
   end
 end 
 
