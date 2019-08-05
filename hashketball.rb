@@ -168,6 +168,7 @@ def player_numbers(team_name)
           data[:numbers]
           data.each do |player|
             player[:number]
+            nums << player[:number]
         end
       end
     end 
